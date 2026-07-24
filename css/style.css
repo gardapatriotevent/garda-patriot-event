@@ -688,3 +688,227 @@ TEAM
     letter-spacing:1px;
 
 }
+/*=========================================
+OUR ACTIVITIES
+=========================================*/
+
+.activities{
+
+    background:#101010;
+
+    padding:110px 8%;
+
+}
+
+.activity{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin-top:70px;
+
+}
+
+.activity.reverse{
+
+    direction:rtl;
+
+}
+
+.activity.reverse .activity-content{
+
+    direction:ltr;
+
+}
+
+.activity-image{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.activity-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s;
+
+}
+
+.activity:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.activity-content h3{
+
+    color:#D4AF37;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.activity-content p{
+
+    color:#d0d0d0;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+.activity:hover{
+
+    transform:translateY(-6px);
+
+    transition:.4s;
+
+}
+
+@media(max-width:900px){
+
+.activity{
+
+grid-template-columns:1fr;
+
+}
+
+.activity.reverse{
+
+direction:ltr;
+
+}
+
+}
+/*==============================
+PORTFOLIO EXPERIENCE
+==============================*/
+
+.portfolio{
+
+padding:100px 8%;
+
+background:#0b0b0b;
+
+color:white;
+
+}
+
+.experience-item{
+
+display:grid;
+
+grid-template-columns:1fr 1.4fr;
+
+gap:60px;
+
+align-items:center;
+
+margin-top:70px;
+
+margin-bottom:100px;
+
+}
+
+.experience-year{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#D4AF37;
+
+color:#111;
+
+font-weight:bold;
+
+border-radius:50px;
+
+margin-bottom:20px;
+
+}
+
+.experience-info h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.experience-info h4{
+
+color:#D4AF37;
+
+margin-bottom:30px;
+
+font-size:22px;
+
+}
+
+.experience-info ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.experience-info li{
+
+margin-bottom:18px;
+
+font-size:18px;
+
+}
+
+.experience-gallery{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+}
+
+.experience-gallery img{
+
+width:100%;
+
+border-radius:18px;
+
+transition:.35s;
+
+border:2px solid rgba(212,175,55,.25);
+
+}
+
+.experience-gallery img:first-child{
+
+grid-column:span 2;
+
+}
+
+.experience-gallery img:hover{
+
+transform:scale(1.03);
+
+border-color:#D4AF37;
+
+box-shadow:0 15px 40px rgba(212,175,55,.25);
+
+}
